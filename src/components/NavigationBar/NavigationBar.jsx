@@ -82,15 +82,17 @@ export default function NavigationBar() {
               )}
             </div>
             <div className="col-4 right-actions">
-              <div
-                className="link"
-                onClick={() => {
-                  navigate("/home");
-                }}
-              >
-                Home
-              </div>
-              {isAdmin() === true && (
+              {window.location.pathname != "/" && (
+                <div
+                  className="link"
+                  onClick={() => {
+                    navigate("/home");
+                  }}
+                >
+                  Home
+                </div>
+              )}
+              {isAdmin() == true && (
                 <div
                   className="link"
                   onClick={() => {
@@ -100,20 +102,22 @@ export default function NavigationBar() {
                   Add Product
                 </div>
               )}
-              <Button
-                variant="contained"
-                sx={{
-                  backgroundColor: "#f40257",
-                  fontWeight: 300,
-                  fontSize: "13.5px",
-                  "&:hover": {
-                    backgroundColor: "#d00248",
-                  },
-                }}
-                onClick={logOut}
-              >
-                LOGOUT
-              </Button>
+              {window.location.pathname != "/" && (
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: "#f40257",
+                    fontWeight: 300,
+                    fontSize: "13.5px",
+                    "&:hover": {
+                      backgroundColor: "#d00248",
+                    },
+                  }}
+                  onClick={logOut}
+                >
+                  LOGOUT
+                </Button>
+              )}
             </div>
           </div>
         </Toolbar>

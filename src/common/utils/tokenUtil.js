@@ -1,7 +1,7 @@
-let authToken = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBkZW1vLmNvbSIsImlhdCI6MTczNTAzNTMyOSwiZXhwIjoxNzM1MDQzNzI5fQ.SbdaS69ExXckQbBy1aIrb1rUuZi1LJJ-Udwk_sEpFCddasM8lD5LCfz8Xf4EU4VK7S2MD9QYTDU8UDvESKuf1g";
+let authToken = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBkZW1vLmNvbSIsImlhdCI6MTczNTA0NDQxNSwiZXhwIjoxNzM1MDUyODE1fQ.KZHltgZcLewTM59AIIUvgxZjHdm-WbBuKkFVtiImVkROBUGr8jYQ7BmbDdpQoUBP4zX_De0XvuMvFzOpm5UIZg";
 
 // Get the token
 export const getToken = () => authToken;
 
-export const isAdmin = () => localStorage.getItem("isAdmin") == 'true';
+export const isAdmin = () => localStorage.getItem("isAdmin")?.toString() == 'true';
 
