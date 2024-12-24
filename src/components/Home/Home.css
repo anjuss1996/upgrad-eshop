@@ -1,0 +1,30 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page-container {
+    top: 130px;
+    /* margin-left: 150px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.card-container {
+    width: 100%;
+}
+
+.product-name {
+    width: 74%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-size: 15px;
+    padding-bottom: 10px;
+}

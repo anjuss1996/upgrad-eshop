@@ -1,0 +1,60 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page-container {
+    top: 130px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    background-color: #f40257;
+    border-radius: 100%;
+    padding: 9px;
+    width: 40px;
+    height: 40px;
+}
+
+.lock-icon {
+    color: white;
+    font-size: 20px !important;
+    padding-left: 2px;
+    margin-top: -4px;
+}
+
+.sign-up {
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.row-spacing {
+    padding-bottom: 15px;
+}
+
+.row-spacing-button {
+    padding-bottom: 20px;
+}
+
+.sign-up {
+    padding-top: 15px;
+    width: max-content;
+}
+
+.sign-in-link {
+    text-align: right;
+    font-size: 12.5px;
+    min-width: 300px;
+    color: #7545a0;
+}
+
+.row-sizing {
+    width: 280px;
+}

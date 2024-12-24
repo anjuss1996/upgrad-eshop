@@ -1,0 +1,15 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page-container {
+    top: 130px;
+    margin-left: 150px;
+    margin-right: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
